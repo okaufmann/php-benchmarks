@@ -25,7 +25,7 @@
     "scripts": {
         "benchmark": [
             "composer dump-autoload",
-            "@php vendor/bin/phpbench run --report=all"
+            "@php vendor/bin/phpbench run --report=aggregate"
         ]
     }
 }
