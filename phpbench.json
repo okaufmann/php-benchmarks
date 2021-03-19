@@ -3,5 +3,12 @@
   "path": "tests/Benchmark",
   "php_config": {
     "memory_limit": "1G"
-  }
+  },
+  "outputs": {
+    "html_file": {
+        "extends": "html",
+        "file": "benchmarks.html",
+        "title": "Example benchmark report"
+    }
+}
 }
