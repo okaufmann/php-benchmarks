@@ -7,7 +7,7 @@
   "outputs": {
     "html_file": {
         "extends": "html",
-        "file": "docs/index.html",
+        "file": "docs/benchmarks.html",
         "title": "Benchmark results"
     }
 }
