@@ -1,0 +1,31 @@
+{
+    "name": "okaufmann/string-contact-benchmarks",
+    "authors": [
+        {
+            "name": "Oliver Kaufmann",
+            "email": "oliver.kaufmann@novu.ch"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "phpbench/phpbench": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "benchmark": [
+            "composer dump-autoload",
+            "@php vendor/bin/phpbench run --report=all"
+        ]
+    }
+}
