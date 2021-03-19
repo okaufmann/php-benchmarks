@@ -14,7 +14,7 @@ jobs:
       fail-fast: true
       matrix:
         php: [8.0]
-        dependency-version: [ prefer-stable ]
+        dependency-version: [prefer-stable]
 
     # env:
     #   extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, mysqli, bcmath, soap, intl, gd, exif, iconv, redis #, imagick
@@ -58,3 +58,7 @@ jobs:
       - name: Execute tests
         run: composer benchmark
 
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update benchmark results
+          file_pattern: benchmarks.html
