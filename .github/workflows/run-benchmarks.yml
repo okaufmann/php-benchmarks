@@ -55,7 +55,7 @@ jobs:
         run: |
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
 
-      - name: Execute tests
+      - name: Execute benchmarks
         run: composer benchmark
 
       - uses: stefanzweifel/git-auto-commit-action@v4
